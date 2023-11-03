@@ -46,6 +46,6 @@ The quiz questions are provided by the quizapi.io service.
 Contributions are welcome! If you would like to contribute to this project, please follow the guidelines in CONTRIBUTING.md.
 
 ## Contact
-For questions or feedback, you can reach out to Your Name.
+For questions or feedback, you can reach out to [Sahil Pawar](https://www.linkedin.com/in/sahil-pawar-016567217/).
 
 
