@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@500&family=Tilt+Prism&display=swap');
+
+.answerContainer {
+text-align: center;
+}
+
+.answerButton {
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  margin: 10px auto;
+  margin-top: 30px;
+}
+
+.question{
+  font-size: 20px;
+}
+
+.number {
+  font-size: 20px;
+  font-style: italic;
+  margin: 20px auto;
+}
+
+.correct {
+  border: 2px solid rgb(0, 255, 0);
+}
+
+.incorrect {
+  border: 2px solid rgb(255, 64, 0);
+} 
+
+.selected {
+  border: 2px solid rgb(255, 255, 255);
+}

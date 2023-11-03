@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@500&family=Tilt+Prism&display=swap');
+
+* {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: table;
+  justify-content: center;
+  border-bottom: 2px solid #333;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 10px;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: 100px;
+  width: 80px;
+}
+
+.selectOption {
+  font-size: 27px;
+  width: 400px;
+  margin: 10px auto;
+  padding: 17px;
+  cursor: pointer;
+
+}
+
+ 
+select:hover {
+  border-inline: 4px solid red;
+} 
+
+.selectOption>option {
+  text-align: center;
+  color: rgb(17, 220, 220);
+}
+
+
+.Starter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.start {
+  font-size: 2em;
+  margin: 20px auto;
+  border: 2px solid red;
+}
+
+.start :hover {
+  color: aqua;
+}
+
+.score {
+  font-size: 28px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.175);
+  width: 20vh;
+  height: 45px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.nextQuestion {
+  text-align: center;
+  border: 2px solid red;
+}
+
+.footButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
