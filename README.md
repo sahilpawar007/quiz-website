@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# Quiz Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web application that allows users to take quizzes. It uses TypeScript, React, Axios, and Vite for the front-end and quizapi.io to fetch quiz questions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Choose from a variety of quiz categories and difficulty levels.
+- Answer multiple-choice questions.
+- See your score and correct answers at the end of the quiz.
+- Start new quizzes with different settings.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **TypeScript**: The project is written in TypeScript to enhance code quality and maintainability.
+- **React**: The front-end is built with React, a popular JavaScript library for building user interfaces.
+- **Axios**: Axios is used for making HTTP requests to fetch quiz questions from the quizapi.io API.
+- **Vite**: Vite is used as the build tool for a fast and efficient development experience.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Install dependencies:
+
+```bash
+cd quiz-website
+npm install or yarn add
+
+```
+Set up environment variables:
+
+Create a .env file in the project root.
+Define your environment variable for the quizapi.io API key asVITE_API_KEY.
+
+```bash
+VITE_API_KEY=your-api-key-here
+
+```
+Start the development server:
+```bash
+npm dev or yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Acknowledgments
+The quiz questions are provided by the quizapi.io service.
+
+## Contributing
+Contributions are welcome! If you would like to contribute to this project, please follow the guidelines in CONTRIBUTING.md.
+
+## Contact
+For questions or feedback, you can reach out to Your Name.
+
+
