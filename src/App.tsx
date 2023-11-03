@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-// import axios from "axios";
 
 //CSS
 import "./App.css";
-
-//Logo
-// import logo from "./assets/logo.png";
 
 //Components
 import QuestionCard from "./components/QuestionCard";
@@ -21,8 +17,6 @@ export type AnswerObject = {
   isCorrect: boolean;
   correctAnswer: string[];
 };
-
-
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -64,14 +58,14 @@ function App() {
     const selectedDifficultyValue = event.target.value as Difficulty;
     setSelectedDifficulty(selectedDifficultyValue);
   };
-  
+
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!gameOver) {
       //chosen answer
       const answer = e.currentTarget.value;
-      console.log("selected answer :",answer);
-      
+      console.log("selected answer :", answer);
+
 
       // correct answers object
       const correctAnswersObject = questions[number].correct_answers;
@@ -81,14 +75,14 @@ function App() {
         .filter(([, value]) => value === "true")
         .map(([key]) => key.replace("_correct", ""));
 
-        console.log("correct answer is :", correctAnswer);
-        
+      console.log("correct answer is :", correctAnswer);
+
 
       //does user's answer and correct answer match
       const isCorrect = correctAnswer.includes(answer);
 
-      console.log("is answer correct :",isCorrect);
-      
+      console.log("is answer correct :", isCorrect);
+
 
       if (isCorrect) setScore((prev) => prev + 1);
 
@@ -116,7 +110,6 @@ function App() {
       <div className="App">
         {/* Header */}
         <div className="header">
-          {/* <img className="logo" title="logo" src={logo} /> */}
           <h1>Welcome to the Quiz!</h1>
         </div>
         {/* Loading */}
@@ -180,19 +173,19 @@ function App() {
           </div>
         ) : null}
         <div className="footButton">
-        {/* Next Question */}
-        {userAnswers.length === number + 1 &&
-        userAnswers.length < TOTAL_NUMBER ? (
-          <button className="nextQuestion" onClick={nextQuestion}>
-            Next Question
-          </button>
-        ) : null}
-        {/* Restart */}
-        {userAnswers.length === TOTAL_NUMBER ? (
-          <button className="resetQuiz" onClick={startQuiz}>
-            Start New Quiz
-          </button>
-        ) : null}
+          {/* Next Question */}
+          {userAnswers.length === number + 1 &&
+            userAnswers.length < TOTAL_NUMBER ? (
+            <button className="nextQuestion" onClick={nextQuestion}>
+              Next Question
+            </button>
+          ) : null}
+          {/* Restart */}
+          {userAnswers.length === TOTAL_NUMBER ? (
+            <button className="resetQuiz" onClick={startQuiz}>
+              Start New Quiz
+            </button>
+          ) : null}
         </div>
       </div>
     </>
